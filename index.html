@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name='description' content='Test your knowledge of American History and maybe even learn a little.'>
+    <title>American History Quiz</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="index.js"></script>
+	<!--<script type="text/javascript" src="app.js"></script>-->
+</head>
+<body>
+	<header>
+    	<div class="row">
+      		<div class="img-container">
+        		<!-- https://commons.wikimedia.org/wiki/File:FirstCommitteeGreatSealReverseLossingDrawing.jpg -->
+        		<img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/FirstCommitteeGreatSealReverseLossingDrawing.jpg"
+          		alt="Franklin's Seal" class='great-seal'>
+      		</div>
+    	</div>
+  	</header>
+
+  	<div class="introContainer">
+    	<h1>The Great American History Quiz</h1>
+    	<h3>Challenge your knowledge and learn a bit about our great country.</h3>
+
+		<p class="question">We'll present you with 10 intriguing questions about the history of<br> 
+		United States of America. (Don't forget to click the links to learn about these topics).<br>
+	    Click the button below to begin!</p>
+
+        <div id="introSubmit">Click here to begin!</div>
+	</div>
+	
+	<div class="qContainer hideThis">
+    	<h3 id="qHeader">And here is your Question:</h3>
+
+		<p class="question">Answer this question by selecting on of the four choices below:</p>
+		<ul class="answers">
+		<li><input type="radio" name="qRadioBtn" value="0" id="c1"><label for="c1" id="c1l">choice a</label></li>
+		<li><input type="radio" name="qRadioBtn" value="1" id="c2"><label for="c2" id="c2l">choice b</label></li>
+		<li><input type="radio" name="qRadioBtn" value="2" id="c3"><label for="c3" id="c3l">choice c</label></li>
+		<li><input type="radio" name="qRadioBtn" value="3" id="c4"><label for="c4" id="c4l">choice d</label></li>
+		</ul>
+		<h4 id ="qTally" class="hideThis"></h4>
+        <div id="qSubmit">Click to submit your answer!</div>
+	</div>
+
+<div class="results hideThis">
+	<p id="resultsP"><em>Question1: </em> You chose blah; The correct answer is <em> blah </em>.</p>
+	<a id="resultsRefLink" href="http://www.constitution.org/mil/tn/batathen.htm" target="_blank"> Just so you know this is not B.S. here is the ref :) :</a>
+	<p id="rollingTotalScore">"Your score: "</p>
+</div>
+
+<div id="qNext" class="hideThis">Next Question!</div>
+
+<div id="showResults" class="hideThis">Show final results!</div>
+
+<div id="startOver">Click Here to start again!</div>
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script> -->
+<!-- <script type="text/javascript" src="app.js"></script> -->
+</body>
+</html>
+
